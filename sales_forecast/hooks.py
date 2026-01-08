@@ -137,13 +137,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Material Request": {
+		"on_cancel": "sales_forecast.sales_forecast.doctype.forecast_club.forecast_club.on_material_request_cancel"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
